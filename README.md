@@ -1,58 +1,80 @@
-📦 PROJECT TITLE
-Image Steganography using LSB in C
+🖼️ Image Steganography using LSB in C
+📌 Description
 
+This project implements Image Steganography using the Least Significant Bit (LSB) technique in C programming. It enables users to securely hide secret text data inside BMP image files and retrieve it later without affecting the visible quality of the image. The system supports both encoding and decoding operations through command-line arguments with proper validation.
 
- DESCRIPTION
-This project implements Image Steganography using the Least Significant Bit (LSB) technique in C programming. It allows users to hide secret text data inside BMP images and extract it later without affecting the visible quality of the image. The system supports both encoding and decoding through command-line arguments with secure data handling.
+🎯 Objective
 
+To design and develop a secure data hiding system that embeds and extracts confidential information within an image using bitwise operations and file handling concepts.
 
- OBJECTIVE
-To securely embed and retrieve confidential information within an image using bitwise operations and file handling concepts.
+🛠️ Technologies Used
 
- TECHNOLOGIES USED
-• C Programming
-• Bitwise Operations
-• File Handling
-• BMP Image Processing
-• Command Line Arguments
+C Programming
 
+Bitwise Operations
 
- FEATURES
-• Encode secret text into image
-• Decode hidden data from image
-• Magic string verification
-• File size embedding & extraction
-• Secure data reconstruction
-• Error handling support
+File Handling
 
+BMP Image Processing
 
- PROJECT MODULES
-• Encoding Module
-• Decoding Module
-• File Validation
-• Magic String Verification
-• Data Extraction
+Command Line Arguments
 
+⚙️ Functionality
+🔐 Encoding
 
- COMPILATION
+Accepts BMP image and secret text file
+
+Verifies image format
+
+Embeds magic string
+
+Stores secret file size
+
+Hides data in LSB bits
+
+Generates stego image
+
+🔓 Decoding
+
+Reads stego image
+
+Verifies magic string
+
+Extracts file size
+
+Decodes hidden bits
+
+Reconstructs secret file
+
+📂 Project Modules
+
+Encoding Module
+
+Decoding Module
+
+File Validation
+
+Magic String Verification
+
+Data Extraction
+
+💻 Compilation
 gcc *.c -o lsb_steg
 
-
- EXECUTION – ENCODE
+▶️ Execution
+Encode
 ./lsb_steg -e input.bmp secret.txt output.bmp
 
-
- EXECUTION – DECODE
+Decode
 ./lsb_steg -d output.bmp decoded.txt
 
+📊 Applications
 
- APPLICATIONS
-• Secure Communication
-• Data Hiding
-• Digital Watermarking
-• Cybersecurity Learning
+Secure Communication
 
+Data Hiding
 
- DEVELOPED BY
-Harisai Pamarthi
-Embedded Systems Trainee
+Digital Watermarking
+
+Cybersecurity Projects
+
