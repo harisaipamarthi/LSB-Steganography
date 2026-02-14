@@ -1,104 +1,58 @@
-🖼️ Image Steganography using LSB -(C)
-📌 Overview
+📦 PROJECT TITLE
+Image Steganography using LSB in C
 
-This project implements Image Steganography using the Least Significant Bit (LSB) technique in C.
 
-It allows users to securely hide secret text data inside a BMP image and later extract it without affecting the visible image quality.
+ DESCRIPTION
+This project implements Image Steganography using the Least Significant Bit (LSB) technique in C programming. It allows users to hide secret text data inside BMP images and extract it later without affecting the visible quality of the image. The system supports both encoding and decoding through command-line arguments with secure data handling.
 
-The application works via command-line arguments and supports both Encoding (-e) and Decoding (-d) operations.
 
- Features
+ OBJECTIVE
+To securely embed and retrieve confidential information within an image using bitwise operations and file handling concepts.
 
-Hide secret text inside BMP image
+ TECHNOLOGIES USED
+• C Programming
+• Bitwise Operations
+• File Handling
+• BMP Image Processing
+• Command Line Arguments
 
-Extract hidden text from stego image
 
-Magic string verification
+ FEATURES
+• Encode secret text into image
+• Decode hidden data from image
+• Magic string verification
+• File size embedding & extraction
+• Secure data reconstruction
+• Error handling support
 
-File size embedding & extraction
 
-Custom output file support
+ PROJECT MODULES
+• Encoding Module
+• Decoding Module
+• File Validation
+• Magic String Verification
+• Data Extraction
 
-Default file creation option
 
-Error handling for invalid inputs
-
-🛠️ Technologies Used
-
-C Programming
-
-Bitwise Operations
-
-File Handling
-
-BMP Image Processing
-
-Command Line Interface
-
-📂 Project Structure
-C-Project-1/
-│
-├── 1-References        → Study materials
-├── 2-OutputImages     → Stego output images
-├── 3-Design           → Flowcharts & diagrams
-├── 4-SkeletonCode     → Source code
-└── README.md
-
-⚙️ Working Principle
-🔐 Encoding Process
-
-Read input BMP image
-
-Read secret text file
-
-Embed magic string
-
-Store secret file size
-
-Hide data in LSB bits
-
-Generate stego image
-
-🔓 Decoding Process
-
-Read stego image
-
-Verify magic string
-
-Extract file size
-
-Decode LSB bits
-
-Reconstruct secret file
-
-💻 Compilation
+ COMPILATION
 gcc *.c -o lsb_steg
 
-▶️ Execution
-Encode
+
+ EXECUTION – ENCODE
 ./lsb_steg -e input.bmp secret.txt output.bmp
 
-Decode
+
+ EXECUTION – DECODE
 ./lsb_steg -d output.bmp decoded.txt
 
-📊 Applications
 
-Secure communication
-
-Data hiding
-
-Digital watermarking
-
-Cybersecurity learning
+ APPLICATIONS
+• Secure Communication
+• Data Hiding
+• Digital Watermarking
+• Cybersecurity Learning
 
 
-
-⭐ Future Enhancements
-
-Support PNG/JPEG images
-
-Password protection
-
-GUI interface
-
-Audio/Video steganography
+ DEVELOPED BY
+Harisai Pamarthi
+Embedded Systems Trainee
